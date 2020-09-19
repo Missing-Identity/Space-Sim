@@ -165,7 +165,7 @@ body {
 
 .flip-card {
   background-color: transparent;
-  width: 700px;
+  width: 80%;
   height: 500px;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
@@ -204,11 +204,18 @@ body {
 .flip-card-front h1 {
   font-size: 6rem;
   text-transform: uppercase;
-  font-weight: 300; }
+  font-weight: 400;
+  margin-bottom: 20px; }
 
 .flip-card-front p {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 1.6rem; }
+
+.flip-card-front h2 {
+  margin-top: 20px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 300; }
 
 /* Style the back side */
 .flip-card-back {

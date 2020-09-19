@@ -26,15 +26,15 @@ body {
   position: relative;
   clip-path: circle(50% at 50% 50%); }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem; }
 
-.logo {
+.header__logo {
   height: 3.5rem; }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 51%;
@@ -47,7 +47,7 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem; }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -56,7 +56,7 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease-out; }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 300;
@@ -68,7 +68,7 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-20rem); }
   /*Start*/
   100% {
     opacity: 1;
@@ -78,7 +78,7 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(20rem); }
   /*Start*/
   100% {
     opacity: 1;
@@ -88,7 +88,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(10rem); }
+    transform: translateY(20rem); }
   /*Start*/
   100% {
     opacity: 1;
@@ -110,7 +110,7 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn-white {
+.btn--white {
   background-color: #ffffff;
   color: #777777; }
 
@@ -126,14 +126,14 @@ body {
   z-index: -1;
   transition: all .2s; }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #ffffff; }
 
 .btn:active::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
 
-.btn-animated {
+.btn--animated {
   animation-name: moveInBottom;
   animation-delay: .75s;
   animation-duration: 2s;

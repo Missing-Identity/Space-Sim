@@ -80,7 +80,7 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-20rem);
+        transform: translateX(-10rem);
     }/*Start*/
 
     100% {
@@ -92,7 +92,7 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(20rem);
+        transform: translateX(10rem);
     }/*Start*/
 
     100% {
@@ -104,7 +104,7 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(20rem);
+        transform: translateY(10rem);
     }/*Start*/
 
     100% {
@@ -126,7 +126,7 @@ body {
 }
 
 .btn:hover {
-    transform: translateY(-3px);
+    transform: translateY(-.3rem);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 }
 

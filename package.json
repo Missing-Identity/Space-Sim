@@ -1,0 +1,15 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "A website to showcase the functioning of our space life sim",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/"
+  },
+  "author": "Team-6 (DedSec)",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

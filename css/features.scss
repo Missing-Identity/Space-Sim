@@ -17,8 +17,9 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     color: #777777;
-    background-image: url(../images/Black-Space.jpg);
-    background-repeat: repeat;
+    background-image: url(../images/astronaut-lost-in-space_3840x2160_xtrafondos.com.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     box-sizing: border-box;
 }
 
@@ -106,6 +107,7 @@ body {
             font-size: 4rem;
             text-transform: uppercase;
             color: white;
+            text-shadow: 2px 1px gray;
 
             animation-name: moveInBottom;
             animation-delay: .75s;
@@ -115,6 +117,72 @@ body {
         }
     }
 }
+
+.btn{
+
+    position: fixed;
+    top: 20px;
+    left: 30px;
+
+    &:link,
+    &-visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.6rem;
+}
+
+&:hover {
+    background-color: black;
+    .fa-chevron-left {
+        color: white;
+      }
+}
+
+// &:active {
+//     transform: translateY(-1px);
+// }
+
+&--gradient {
+    background-color: #ffffff;
+    color: #777777;
+
+    &::after {
+        background-color: #ffffff;
+    }
+}
+
+&::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .2s;
+}
+
+&:active::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+&--animated {
+    animation-name: moveInLeft;
+    animation-delay: .75s;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+}
+
 
 .app-ss{
     text-align: center;
@@ -163,7 +231,7 @@ body {
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-image: linear-gradient(to right bottom, #c31432, #240b36), url(../images/astronaut-lost-in-space_3840x2160_xtrafondos.com.jpg);
+    background-image: linear-gradient(to right bottom, #ff00cca6, #3333999c), url(../images/Purple.jpg);
     color: white;
     border-radius: 25px;
     transition: all 0.4s;
@@ -173,35 +241,17 @@ body {
         text-transform: uppercase;
         font-weight: 400;
         margin-bottom: 10px;
-
-        animation-name: moveInLeft;
-        animation-delay: .75s;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: backwards;
     }
     p{
         margin-top: 5px;
         font-size: 1.6rem;
         font-weight: 300;
-
-        animation-name: moveInLeft;
-        animation-delay: .75s;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: backwards;
     }
     h2{
         margin-top: 5px;
         font-size: 3rem;
         text-transform: uppercase;
         font-weight: 400;
-
-        animation-name: moveInLeft;
-        animation-delay: .75s;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: backwards;
     }
   }
   

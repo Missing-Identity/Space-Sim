@@ -27,45 +27,40 @@ body {
   background-position: top;
   position: relative;
   clip-path: circle(35% at 50% 50%); }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 3.5rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 50%;
-  left: 51%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .heading-primary {
   color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease-out; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: 1.8rem;
-  animation-name: moveInRight;
-  animation-duration: 2s;
-  animation-timing-function: ease-out; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1.8rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
 
 .app-features {
   height: 5vh;
@@ -77,14 +72,12 @@ body {
   margin-right: 30%;
   border-radius: 100px;
   position: relative; }
-
-.app-features__text-box {
-  text-align: center; }
-
-.app-features__text-box .heading-secondary {
-  font-weight: 300;
-  text-transform: uppercase;
-  color: white; }
+  .app-features__text-box {
+    text-align: center; }
+    .app-features__text-box .heading-secondary {
+      font-weight: 300;
+      text-transform: uppercase;
+      color: white; }
 
 @keyframes moveInLeft {
   0% {
@@ -133,9 +126,8 @@ body {
 .btn--white {
   background-color: #ffffff;
   color: #777777; }
-
-.btn--white::after {
-  background-color: #ffffff; }
+  .btn--white::after {
+    background-color: #ffffff; }
 
 .btn::after {
   content: "";
@@ -171,7 +163,8 @@ body {
   /* Remove this if you don't want the 3D effect */
   display: inline-block;
   margin: 20px;
-  margin-top: 12rem; }
+  margin-top: 12rem;
+  transition: all .4s; }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -199,23 +192,21 @@ body {
 .flip-card-front {
   background-image: linear-gradient(to right bottom, #2b5876bd, #4e4376a8), url(../images/astronaut-lost-in-space_3840x2160_xtrafondos.com.jpg);
   color: white;
-  border-radius: 25px; }
-
-.flip-card-front h1 {
-  font-size: 6rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 20px; }
-
-.flip-card-front p {
-  margin-top: 20px;
-  font-size: 1.6rem; }
-
-.flip-card-front h2 {
-  margin-top: 20px;
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: 300; }
+  border-radius: 25px;
+  transition: all 0.4s; }
+  .flip-card-front h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .flip-card-front p {
+    margin-top: 20px;
+    font-size: 1.6rem; }
+  .flip-card-front h2 {
+    margin-top: 20px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300; }
 
 /* Style the back side */
 .flip-card-back {

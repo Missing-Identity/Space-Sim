@@ -1,0 +1,191 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  /*Setting font size to 10px from default 16px*/
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777777;
+  background-image: url(../images/Black-Space.jpg);
+  background-repeat: repeat;
+  box-sizing: border-box; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  /*Start*/
+  80% {
+    transform: translateX(-10px); }
+  /*At 80% of animation*/
+  100% {
+    opacity: 1;
+    transform: translate(0); }
+  /*Finish*/ }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  /*Start*/
+  100% {
+    opacity: 1;
+    transform: translate(0); }
+  /*Finish*/ }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  /*Start*/
+  80% {
+    transform: translateY(-10px); }
+  /*At 80% of animation*/
+  100% {
+    opacity: 1;
+    transform: translate(0); }
+  /*Finish*/ }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  /*Start*/
+  80% {
+    transform: translateY(-20px); }
+  /*At 80% of animation*/
+  100% {
+    opacity: 1;
+    transform: translate(0); }
+  /*Finish*/ }
+
+.app-features {
+  height: 15vh;
+  background-position: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 70px;
+  position: relative;
+  animation-name: moveInTop;
+  animation-delay: .75s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards; }
+  .app-features__text-box {
+    text-align: center;
+    padding-top: 3%; }
+    .app-features__text-box .heading-secondary {
+      justify-items: center;
+      font-weight: 300;
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: white;
+      animation-name: moveInBottom;
+      animation-delay: .75s;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: backwards; }
+
+.app-ss {
+  text-align: center;
+  animation-name: moveInRight;
+  animation-delay: .75s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards; }
+
+.flip-card {
+  background-color: transparent;
+  width: 30%;
+  height: 300px;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  display: inline-block;
+  margin: 20px;
+  margin-top: 12rem; }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); }
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden; }
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-image: linear-gradient(to right bottom, #c31432, #240b36), url(../images/astronaut-lost-in-space_3840x2160_xtrafondos.com.jpg);
+  color: white;
+  border-radius: 25px;
+  transition: all 0.4s;
+  background-position: center; }
+  .flip-card-front h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+    animation-name: moveInLeft;
+    animation-delay: .75s;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards; }
+  .flip-card-front p {
+    margin-top: 5px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    animation-name: moveInLeft;
+    animation-delay: .75s;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards; }
+  .flip-card-front h2 {
+    margin-top: 5px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    animation-name: moveInLeft;
+    animation-delay: .75s;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards; }
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #bbb;
+  color: black;
+  transform: rotateY(180deg);
+  border-radius: 25px;
+  position: relative; }
+  .flip-card-back .centered-img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.3); }

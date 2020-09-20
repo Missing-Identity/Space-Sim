@@ -207,6 +207,7 @@ body {
     display: inline-block;
     margin: 20px;
     margin-top: 12rem;
+    transition: all .4s;
   }
   
   /* This container is needed to position the front and back side */
@@ -238,6 +239,7 @@ body {
     background-image: linear-gradient(to right bottom, #2b5876bd, #4e4376a8), url(../images/astronaut-lost-in-space_3840x2160_xtrafondos.com.jpg);
     color: white;
     border-radius: 25px;
+    transition: all 0.4s;
     h1{
         font-size: 6rem;
         text-transform: uppercase;
